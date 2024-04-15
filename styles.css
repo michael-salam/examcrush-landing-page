@@ -107,7 +107,7 @@ a.primary-btn {
 }
 
 .features {
-  background-image: linear-gradient(to right, #fe47de, #a145e3);
+  background-image: linear-gradient(to right, #fe47deb3, #a145e3b3);
   color: hsl(265, 41%, 25%);
   font-weight: 500;
   padding: 5rem;
