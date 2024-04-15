@@ -212,7 +212,8 @@ a.primary-btn {
 
   .final-cta {
     flex-direction: column;
-    align-items: start;
+    text-align: center;
+    /* align-items: start; */
   }
 
   .final-cta .heading-large {
