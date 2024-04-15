@@ -54,11 +54,11 @@ a.primary-btn {
 }
 
 .heading-large {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 1.6333rem + 3.698vw, 4rem);
 }
 
 .heading-medium {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 0.9222rem + 2.4653vw, 2.5rem);
 }
 
 .header {
@@ -73,10 +73,15 @@ a.primary-btn {
   padding: 2rem 0;
 }
 
+.logo .logomark {
+  display: none;
+}
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .hero .text {
@@ -105,12 +110,12 @@ a.primary-btn {
   background-image: linear-gradient(to right, #fe47de, #a145e3);
   color: hsl(265, 41%, 25%);
   font-weight: 500;
-  padding: 5rem 0;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   gap: 4rem;
   text-align: center;
-  margin: 5vw auto;
+  margin: 10rem auto;
   width: 90%;
   border-radius: 0.5rem;
 }
@@ -126,6 +131,10 @@ a.primary-btn {
   gap: 1rem;
 }
 
+.features .feature img {
+  width: 5rem;
+}
+
 .features .feature p {
   max-width: 35ch;
 }
@@ -136,7 +145,7 @@ a.primary-btn {
   justify-content: space-between;
   gap: 1rem;
   width: 80%;
-  margin: 15vw auto;
+  margin: 8rem auto;
 }
 
 .final-cta .left {
@@ -174,4 +183,70 @@ a.primary-btn {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .final-cta {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .hero .text p {
+    margin: 0 auto;
+  }
+
+  .hero .image {
+    max-width: 50%;
+  }
+
+  .final-cta {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .final-cta .heading-large {
+    max-width: 15ch;
+  }
+
+  .final-cta .right p {
+    max-width: 40ch;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo .logomark {
+    display: block;
+  }
+
+  .logo .full-logo {
+    display: none;
+  }
+
+  .navbar .primary-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .hero .text .primary-btn {
+    font-size: 1rem;
+  }
+
+  .features {
+    padding: 5rem 1rem;
+  }
+
+  .features .feature img {
+    width: 3rem;
+  }
 }
