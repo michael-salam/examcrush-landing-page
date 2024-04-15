@@ -113,6 +113,7 @@ a.primary-btn {
   padding: 5rem;
   display: flex;
   justify-content: center;
+  align-items: start;
   gap: 4rem;
   text-align: center;
   margin: 10rem auto;
@@ -199,7 +200,7 @@ a.primary-btn {
   .hero {
     flex-direction: column;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   .hero .text p {
